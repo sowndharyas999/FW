@@ -2,382 +2,517 @@
 const products = [
     {
         id: 1,
-        name: "APEX Pro Max",
-        brand: "APEX",
+        name: "NEXUS Alpha",
         price: 299.99,
-        rating: 4.8,
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff6b35;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2300d4ff;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad1)' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Montserrat' font-size='24' font-weight='bold'%3EAPEX PRO%3C/text%3E%3C/svg%3E",
-        badge: "New"
+        image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop",
+        rating: 5,
+        description: "Premium running shoe with advanced cushioning"
     },
     {
         id: 2,
-        name: "Quantum Runner",
-        brand: "APEX",
-        price: 249.99,
-        rating: 4.6,
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23ff6b35;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad2)' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Montserrat' font-size='24' font-weight='bold'%3EQUANTUM%3C/text%3E%3C/svg%3E",
-        badge: "Limited"
+        name: "NEXUS Beta",
+        price: 349.99,
+        image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=300&fit=crop",
+        rating: 4,
+        description: "High-performance basketball shoe"
     },
     {
         id: 3,
-        name: "Velocity X",
-        brand: "APEX",
-        price: 199.99,
-        rating: 4.7,
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff6b35;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23ff0066;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad3)' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Montserrat' font-size='24' font-weight='bold'%3EVELOCITY%3C/text%3E%3C/svg%3E",
-        badge: "Popular"
+        name: "NEXUS Gamma",
+        price: 279.99,
+        image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=300&fit=crop",
+        rating: 5,
+        description: "Stylish casual sneaker"
     },
     {
         id: 4,
-        name: "Stealth Elite",
-        brand: "APEX",
-        price: 349.99,
-        rating: 4.9,
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='grad4' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%231e293b;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2300d4ff;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad4)' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Montserrat' font-size='24' font-weight='bold'%3ESTEALTH%3C/text%3E%3C/svg%3E",
-        badge: "Premium"
+        name: "NEXUS Delta",
+        price: 399.99,
+        image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=300&fit=crop",
+        rating: 4,
+        description: "Professional training shoe"
     },
     {
         id: 5,
-        name: "Fusion Light",
-        brand: "APEX",
-        price: 179.99,
-        rating: 4.5,
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3CradialGradient id='grad5'%3E%3Cstop offset='0%25' style='stop-color:%23ff6b35;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231e293b;stop-opacity:1' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23grad5)' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Montserrat' font-size='24' font-weight='bold'%3EFUSION%3C/text%3E%3C/svg%3E",
-        badge: "Sale"
+        name: "NEXUS Epsilon",
+        price: 329.99,
+        image: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=400&h=300&fit=crop",
+        rating: 5,
+        description: "Limited edition collector's item"
     },
     {
         id: 6,
-        name: "Apex Classic",
-        brand: "APEX",
-        price: 159.99,
-        rating: 4.4,
-        image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='grad6' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23334155;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23ff6b35;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad6)' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Montserrat' font-size='24' font-weight='bold'%3ECLASSIC%3C/text%3E%3C/svg%3E"
+        name: "NEXUS Zeta",
+        price: 259.99,
+        image: "https://images.unsplash.com/photo-1605348532760-6753a2b43667?w=400&h=300&fit=crop",
+        rating: 4,
+        description: "Everyday comfort shoe"
     }
 ];
 
 // Shopping Cart State
 let cart = [];
-let currentCheckoutStep = 1;
 
-// Initialize
+// Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-    renderProducts();
-    updateCartCount();
-    setupScrollEffects();
-    setupCardFormatting();
+    loadProducts();
+    updateCartUI();
+    initializeEventListeners();
+    addRippleEffect();
 });
 
-// Render Products
-function renderProducts() {
-    const productsGrid = document.getElementById('productsGrid');
-    productsGrid.innerHTML = '';
-
+// Load products into the grid
+function loadProducts() {
+    const productGrid = document.getElementById('product-grid');
+    
     products.forEach(product => {
-        const productCard = document.createElement('div');
-        productCard.className = 'product-card';
-        productCard.innerHTML = `
-            ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
-            <div class="product-image-container">
-                <img src="${product.image}" alt="${product.name}" class="product-image">
-            </div>
-            <div class="product-info">
-                <div class="product-brand">${product.brand}</div>
-                <div class="product-name">${product.name}</div>
-                <div class="product-price">$${product.price}</div>
-                <div class="product-rating">
-                    ${generateStars(product.rating)}
-                    <span class="rating-text">(${product.rating})</span>
-                </div>
-                <button class="add-to-cart-btn ripple" onclick="addToCart(${product.id})">
-                    Add to Cart
-                </button>
-            </div>
-        `;
-        productsGrid.appendChild(productCard);
+        const productCard = createProductCard(product);
+        productGrid.appendChild(productCard);
     });
 }
 
-// Generate Star Rating
+// Create product card element
+function createProductCard(product) {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name">${product.name}</h3>
+            <div class="product-price">$${product.price.toFixed(2)}</div>
+            <div class="product-rating">
+                ${generateStars(product.rating)}
+            </div>
+            <button class="add-to-cart ripple" onclick="addToCart(${product.id})">
+                Add to Cart
+            </button>
+        </div>
+    `;
+    return card;
+}
+
+// Generate star rating HTML
 function generateStars(rating) {
     let stars = '';
     for (let i = 1; i <= 5; i++) {
-        if (i <= Math.floor(rating)) {
+        if (i <= rating) {
             stars += '<svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
         } else {
-            stars += '<svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+            stars += '<svg class="star" viewBox="0 0 24 24" style="opacity: 0.3"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
         }
     }
     return stars;
 }
 
-// Add to Cart
+// Add product to cart
 function addToCart(productId) {
     const product = products.find(p => p.id === productId);
     const existingItem = cart.find(item => item.id === productId);
-
+    
     if (existingItem) {
         existingItem.quantity++;
     } else {
         cart.push({
             ...product,
-            quantity: 1,
-            cartId: Date.now()
+            quantity: 1
         });
     }
-
-    updateCart();
+    
+    updateCartUI();
     showToast(`${product.name} added to cart!`);
-
-    // Button animation
+    
+    // Add button animation
     event.target.classList.add('added');
-    event.target.textContent = '✓ Added';
     setTimeout(() => {
         event.target.classList.remove('added');
-        event.target.textContent = 'Add to Cart';
-    }, 2000);
+    }, 1000);
 }
 
-// Toggle Cart
-function toggleCart() {
-    document.getElementById('cartSidebar').classList.toggle('active');
-}
-
-// Update Cart
-function updateCart() {
+// Update cart UI
+function updateCartUI() {
     updateCartCount();
-    renderCartItems();
+    updateCartItems();
     updateCartTotal();
 }
 
-// Update Cart Count
+// Update cart count badge
 function updateCartCount() {
     const count = cart.reduce((total, item) => total + item.quantity, 0);
-    document.getElementById('cartCount').textContent = count;
+    document.getElementById('cart-count').textContent = count;
 }
 
-// Render Cart Items
-function renderCartItems() {
-    const cartItemsContainer = document.getElementById('cartItems');
-
+// Update cart items display
+function updateCartItems() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    
     if (cart.length === 0) {
-        cartItemsContainer.innerHTML = `
-            <div class="empty-cart">
-                <div class="empty-cart-icon">🛒</div>
-                <p>Your cart is empty</p>
-            </div>
-        `;
+        cartItemsContainer.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">Your cart is empty</p>';
         return;
     }
-
-    cartItemsContainer.innerHTML = '';
-    cart.forEach(item => {
-        const cartItem = document.createElement('div');
-        cartItem.className = 'cart-item';
-        cartItem.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+    
+    cartItemsContainer.innerHTML = cart.map(item => `
+        <div class="cart-item">
+            <img src="${item.image}" alt="${item.name}">
             <div class="cart-item-info">
                 <div class="cart-item-name">${item.name}</div>
-                <div class="cart-item-price">$${item.price}</div>
+                <div class="cart-item-price">$${item.price.toFixed(2)}</div>
                 <div class="cart-item-quantity">
-                    <button class="quantity-btn" onclick="updateQuantity(${item.cartId}, -1)">-</button>
+                    <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
                     <span>${item.quantity}</span>
-                    <button class="quantity-btn" onclick="updateQuantity(${item.cartId}, 1)">+</button>
-                    <button class="remove-item" onclick="removeFromCart(${item.cartId})">Remove</button>
+                    <button class="quantity-btn" onclick="updateQuantity(${item.id}, 1)">+</button>
                 </div>
             </div>
-        `;
-        cartItemsContainer.appendChild(cartItem);
-    });
+            <button class="remove-item" onclick="removeFromCart(${item.id})">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    `).join('');
 }
 
-// Update Quantity
-function updateQuantity(cartId, change) {
-    const item = cart.find(item => item.cartId === cartId);
+// Update cart total
+function updateCartTotal() {
+    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    document.getElementById('cart-total').textContent = `$${total.toFixed(2)}`;
+    document.getElementById('checkout-total').textContent = `$${total.toFixed(2)}`;
+}
+
+// Update item quantity
+function updateQuantity(productId, change) {
+    const item = cart.find(item => item.id === productId);
     if (item) {
         item.quantity += change;
         if (item.quantity <= 0) {
-            removeFromCart(cartId);
+            removeFromCart(productId);
         } else {
-            updateCart();
+            updateCartUI();
         }
     }
 }
 
-// Remove from Cart
-function removeFromCart(cartId) {
-    cart = cart.filter(item => item.cartId !== cartId);
-    updateCart();
+// Remove item from cart
+function removeFromCart(productId) {
+    cart = cart.filter(item => item.id !== productId);
+    updateCartUI();
     showToast('Item removed from cart');
 }
 
-// Update Cart Total
-function updateCartTotal() {
-    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    document.getElementById('cartTotal').textContent = `$${total.toFixed(2)}`;
+// Toggle cart sidebar
+function toggleCart() {
+    const cartSidebar = document.getElementById('cart-sidebar');
+    cartSidebar.classList.toggle('open');
 }
 
-// Checkout Functions
+// Open checkout modal
 function openCheckout() {
     if (cart.length === 0) {
         showToast('Your cart is empty');
         return;
     }
-
-    document.getElementById('checkoutModal').classList.add('active');
+    
+    document.getElementById('checkout-modal').classList.add('active');
+    updateCheckoutItems();
     toggleCart();
-    currentCheckoutStep = 1;
-    updateCheckoutStep();
 }
 
+// Update checkout items display
+function updateCheckoutItems() {
+    const checkoutItems = document.getElementById('checkout-items');
+    checkoutItems.innerHTML = cart.map(item => `
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+            <span>${item.name} x${item.quantity}</span>
+            <span>$${(item.price * item.quantity).toFixed(2)}</span>
+        </div>
+    `).join('');
+}
+
+// Close checkout modal
 function closeCheckout() {
-    document.getElementById('checkoutModal').classList.remove('active');
+    document.getElementById('checkout-modal').classList.remove('active');
+    resetCheckoutSteps();
 }
 
-function changeStep(direction) {
-    currentCheckoutStep += direction;
-
-    if (currentCheckoutStep < 1) currentCheckoutStep = 1;
-    if (currentCheckoutStep > 3) currentCheckoutStep = 3;
-
-    updateCheckoutStep();
+// Reset checkout steps
+function resetCheckoutSteps() {
+    document.getElementById('step-1').classList.add('active');
+    document.getElementById('step-2').classList.remove('active');
 }
 
-function updateCheckoutStep() {
-    // Hide all steps
-    document.getElementById('checkoutStep1').style.display = 'none';
-    document.getElementById('checkoutStep2').style.display = 'none';
-    document.getElementById('checkoutStep3').style.display = 'none';
-
-    // Show current step
-    document.getElementById(`checkoutStep${currentCheckoutStep}`).style.display = 'block';
-
-    // Update step indicators
-    for (let i = 1; i <= 3; i++) {
-        const step = document.getElementById(`step${i}`);
-        step.classList.remove('active', 'completed');
-        if (i < currentCheckoutStep) {
-            step.classList.add('completed');
-        } else if (i === currentCheckoutStep) {
-            step.classList.add('active');
+// Next checkout step
+function nextStep(stepNumber) {
+    const currentStep = document.querySelector('.step.active');
+    const nextStep = document.getElementById(`step-${stepNumber}`);
+    
+    // Simple validation for shipping form
+    if (stepNumber === 2) {
+        const shippingForm = document.getElementById('shipping-form');
+        const inputs = shippingForm.querySelectorAll('input[required]');
+        let isValid = true;
+        
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                isValid = false;
+                input.style.borderColor = 'var(--accent-color)';
+            } else {
+                input.style.borderColor = 'var(--glass-border)';
+            }
+        });
+        
+        if (!isValid) {
+            showToast('Please fill in all required fields');
+            return;
         }
     }
-
-    // Update buttons
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-
-    prevBtn.style.display = currentCheckoutStep === 1 ? 'none' : 'block';
-
-    if (currentCheckoutStep === 3) {
-        nextBtn.textContent = 'Complete Order';
-        nextBtn.onclick = completeOrder;
-        loadOrderSummary();
-    } else {
-        nextBtn.textContent = 'Next';
-        nextBtn.onclick = () => changeStep(1);
-    }
+    
+    currentStep.classList.remove('active');
+    nextStep.classList.add('active');
 }
 
-function loadOrderSummary() {
-    const orderSummary = document.getElementById('orderSummary');
-    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-
-    let summaryHTML = '<div style="margin-bottom: var(--spacing-md);">';
-    cart.forEach(item => {
-        summaryHTML += `
-            <div style="display: flex; justify-content: space-between; margin-bottom: var(--spacing-sm); padding: var(--spacing-sm); background: rgba(255, 255, 255, 0.02); border-radius: 10px;">
-                <span>${item.name} x${item.quantity}</span>
-                <span>$${(item.price * item.quantity).toFixed(2)}</span>
-            </div>
-        `;
-    });
-    summaryHTML += `
-        </div>
-        <div style="display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: 700; padding-top: var(--spacing-sm); border-top: 1px solid var(--glass-border);">
-            <span>Total:</span>
-            <span>$${total.toFixed(2)}</span>
-        </div>
-    `;
-
-    orderSummary.innerHTML = summaryHTML;
-}
-
-function completeOrder() {
-    showToast('Processing order...');
-
+// Process payment
+function processPayment(event) {
+    event.preventDefault();
+    
+    // Show loading state
+    const submitButton = event.target.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+    submitButton.innerHTML = '<span class="loading"></span> Processing...';
+    submitButton.disabled = true;
+    
+    // Simulate payment processing
     setTimeout(() => {
+        showToast('Payment successful! Order confirmed.');
         cart = [];
-        updateCart();
+        updateCartUI();
         closeCheckout();
-        showToast('Order placed successfully! 🎉');
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
     }, 2000);
 }
 
-// Toast Notification
+// Show toast notification
 function showToast(message) {
     const toast = document.getElementById('toast');
-    toast.textContent = message;
+    const toastMessage = document.getElementById('toast-message');
+    
+    toastMessage.textContent = message;
     toast.classList.add('show');
-
+    
     setTimeout(() => {
         toast.classList.remove('show');
     }, 3000);
 }
 
-// Scroll Effects
-function setupScrollEffects() {
-    const nav = document.querySelector('nav');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            nav.style.background = 'rgba(10, 10, 10, 0.95)';
-        } else {
-            nav.style.background = '';
-        }
-    });
+// Scroll to shop section
+function scrollToShop() {
+    document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
 }
 
-// Card Formatting
-function setupCardFormatting() {
-    const cardNumber = document.getElementById('cardNumber');
-    const expiryDate = document.getElementById('expiryDate');
-    const cvv = document.getElementById('cvv');
-
-    if (cardNumber) {
-        cardNumber.addEventListener('input', (e) => {
+// Initialize event listeners
+function initializeEventListeners() {
+    // Cart toggle
+    document.getElementById('cart-toggle').addEventListener('click', function(e) {
+        e.preventDefault();
+        toggleCart();
+    });
+    
+    // Close cart on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const cartSidebar = document.getElementById('cart-sidebar');
+            const checkoutModal = document.getElementById('checkout-modal');
+            
+            if (checkoutModal.classList.contains('active')) {
+                closeCheckout();
+            } else if (cartSidebar.classList.contains('open')) {
+                toggleCart();
+            }
+        }
+    });
+    
+    // Close modal on background click
+    document.getElementById('checkout-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeCheckout();
+        }
+    });
+    
+    // Format card number input
+    document.addEventListener('input', function(e) {
+        if (e.target.placeholder === 'Card Number') {
             let value = e.target.value.replace(/\s/g, '');
             let formattedValue = value.match(/.{1,4}/g)?.join(' ') || value;
             e.target.value = formattedValue;
-        });
-    }
-
-    if (expiryDate) {
-        expiryDate.addEventListener('input', (e) => {
+        }
+        
+        if (e.target.placeholder === 'MM/YY') {
             let value = e.target.value.replace(/\D/g, '');
             if (value.length >= 2) {
                 value = value.slice(0, 2) + '/' + value.slice(2, 4);
             }
             e.target.value = value;
-        });
-    }
-
-    if (cvv) {
-        cvv.addEventListener('input', (e) => {
+        }
+        
+        if (e.target.placeholder === 'CVV') {
             e.target.value = e.target.value.replace(/\D/g, '');
-        });
-    }
-}
-
-// Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
         }
     });
+    
+    // Navbar scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+        } else {
+            navbar.style.background = 'var(--glass-bg)';
+            navbar.style.boxShadow = 'none';
+        }
+        
+        lastScroll = currentScroll;
+    });
+    
+    // Add hover effect to product cards
+    document.addEventListener('mouseover', function(e) {
+        if (e.target.closest('.product-card')) {
+            const card = e.target.closest('.product-card');
+            card.style.transform = 'translateY(-10px) scale(1.02)';
+        }
+    });
+    
+    document.addEventListener('mouseout', function(e) {
+        if (e.target.closest('.product-card')) {
+            const card = e.target.closest('.product-card');
+            card.style.transform = 'translateY(0) scale(1)';
+        }
+    });
+}
+
+// Add ripple effect to buttons
+function addRippleEffect() {
+    const buttons = document.querySelectorAll('.ripple');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.classList.add('ripple-effect');
+            
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+}
+
+// Add CSS for ripple effect
+const style = document.createElement('style');
+style.textContent = `
+    .ripple {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .ripple-effect {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        transform: scale(0);
+        animation: ripple-animation 0.6s ease-out;
+        pointer-events: none;
+    }
+    
+    @keyframes ripple-animation {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// Add intersection observer for animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe product cards for animation
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(() => {
+        const productCards = document.querySelectorAll('.product-card');
+        productCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    }, 100);
 });
+
+// Add parallax effect to hero section
+window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    const hero = document.querySelector('.hero');
+    const heroImage = document.querySelector('.floating-shoe');
+    
+    if (hero && heroImage) {
+        heroImage.style.transform = `translateY(${scrolled * 0.3}px) rotate(${scrolled * 0.1}deg)`;
+    }
+});
+
+// Add keyboard navigation
+document.addEventListener('keydown', function(e) {
+    // Ctrl/Cmd + K to open cart
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        toggleCart();
+    }
+    
+    // Ctrl/Cmd + / to focus search (if implemented)
+    if ((e.ctrlKey || e.metaKey) && e.key === '/') {
+        e.preventDefault();
+        // Focus search input if implemented
+    }
+});
+
+// Performance optimization: Debounce scroll events
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Apply debounce to scroll handlers
+const debouncedScrollHandler = debounce(function() {
+    // Scroll-related optimizations
+}, 10);
+
+window.addEventListener('scroll', debouncedScrollHandler);
